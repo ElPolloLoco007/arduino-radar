@@ -1,0 +1,90 @@
+---
+title: "Radar"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(readxl)
+library(tinytex)
+noMotion <- read_excel("test1noMotion.xlsx")
+withMotion <- read_excel("Test2withMotion.xlsx")
+```
+
+
+## Plots
+
+```{r}
+
+ ggplot(data = noMotion, mapping = aes(x = noMotion$Angle, y = noMotion$Range)) +
+  geom_point(color ="darkblue")+
+  labs(title = "Ultrasonic Range Test (No Motion)")+
+  labs(x="Counter")+
+  labs(y="Range (cm)")
+```
+
+
+```{r}
+ 
+ ggplot(data = withMotion, mapping = aes(x = withMotion$Angle, y = withMotion$Range,
+  color = withMotion$LeftRight)) +
+  geom_point(size = 0.9)+
+  facet_grid(cols = vars(withMotion$Test))+
+  labs(title = "Ultrasonic Tests (Motion) Range:<100cm")+
+  labs(x="Angle")+
+  labs(y="Range (cm)")+
+  labs(color="Left/Right")
+```
+
+
+```{r}
+ 
+ range100<-filter(withMotion, Range < 100)
+ 
+ ggplot(data = range100, mapping = aes(x = range100$Angle, y = range100$Range,
+  color = range100$LeftRight)) +
+  geom_point(size = 0.9)+
+  facet_grid(cols = vars(range100$Test))+
+  labs(title = "Ultrasonic Tests (Motion) Range:<100cm")+
+  labs(x="Angle")+
+  labs(y="Range (cm)")+
+  labs(color="Left/Right")
+```
+
+
+```{r}
+ test1<-filter(withMotion, Range < 100 & Test == 1)
+ 
+
+ ggplot(data = test1, mapping = aes(x = test1$Angle, y = test1$Range,
+  color = test1$LeftRight)) +
+  geom_point(size = 0.9)+
+  facet_grid(cols = vars(test1$LeftRight))+
+  labs(title = "Ultrasonic Test 1 (Motion) Range:<100cm")+
+  labs(x="Angle")+
+  labs(y="Range (cm)")+
+  labs(color="Left/Right")
+```
+
+
+```{r}
+test2<-filter(withMotion, Range < 100 & Test == 2)
+ 
+ ggplot(data = test2, mapping = aes(x = test2$Angle, y = test2$Range,color = test2$LeftRight)) +
+  geom_point(size = 0.9)+
+  facet_grid(cols = vars(test2$LeftRight))+
+  labs(title = "Ultrasonic Test 2 (Motion) Range:<100cm")+
+  labs(x="Angle")+
+  labs(y="Range (cm)")+
+  labs(color="Left/Right")
+```
+
+
+
+
+
+
+

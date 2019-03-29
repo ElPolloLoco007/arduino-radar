@@ -1,0 +1,55 @@
+\BOOKMARK [0][-]{chapter*.1}{Abstract}{}% 1
+\BOOKMARK [0][-]{chapter*.1}{Contents}{}% 2
+\BOOKMARK [0][-]{chapter*.2}{Foreword}{}% 3
+\BOOKMARK [1][-]{section*.3}{Acknowledgement}{chapter*.2}% 4
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 5
+\BOOKMARK [0][-]{chapter.2}{Problem description and statement}{}% 6
+\BOOKMARK [0][-]{chapter.3}{Radar}{}% 7
+\BOOKMARK [1][-]{section.3.1}{Hardware components}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.2}{ Hardware components purpose and what are they being used for}{chapter.3}% 9
+\BOOKMARK [2][-]{subsection.3.2.1}{LED}{section.3.2}% 10
+\BOOKMARK [2][-]{subsection.3.2.2}{RGB LED}{section.3.2}% 11
+\BOOKMARK [2][-]{subsection.3.2.3}{Push button}{section.3.2}% 12
+\BOOKMARK [2][-]{subsection.3.2.4}{LCD display}{section.3.2}% 13
+\BOOKMARK [2][-]{subsection.3.2.5}{Temperature sensor}{section.3.2}% 14
+\BOOKMARK [2][-]{subsection.3.2.6}{Servo motor}{section.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.2.7}{Ultrasonic sensor}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.8}{Resistors}{section.3.2}% 17
+\BOOKMARK [1][-]{section.3.3}{Complete circuit}{chapter.3}% 18
+\BOOKMARK [0][-]{chapter.4}{How it's done}{}% 19
+\BOOKMARK [0][-]{chapter.5}{Code}{}% 20
+\BOOKMARK [1][-]{section.5.1}{Arduino Enviroment}{chapter.5}% 21
+\BOOKMARK [2][-]{subsection.5.1.1}{Arduino Coding Environment}{section.5.1}% 22
+\BOOKMARK [2][-]{subsection.5.1.2}{Arduino code}{section.5.1}% 23
+\BOOKMARK [1][-]{section.5.2}{Libraries}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.3}{Radar.ino}{chapter.5}% 25
+\BOOKMARK [2][-]{subsection.5.3.1}{void setup\(\)}{section.5.3}% 26
+\BOOKMARK [2][-]{subsection.5.3.2}{void loop\(\)}{section.5.3}% 27
+\BOOKMARK [1][-]{section.5.4}{Classes}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.5}{Config.h}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.6}{Functions}{chapter.5}% 30
+\BOOKMARK [2][-]{subsection.5.6.1}{void run\(Servo s, LiquidCrystal\137I2C lcd\)B.2}{section.5.6}% 31
+\BOOKMARK [2][-]{subsection.5.6.2}{void servoDirection\(Servo s, int state, LiquidCrystal\137I2C lcd\)B.2}{section.5.6}% 32
+\BOOKMARK [2][-]{subsection.5.6.3}{void setSpeedOfSound\(int temperature\)B.4}{section.5.6}% 33
+\BOOKMARK [2][-]{subsection.5.6.4}{void setDistance\(float speedOfSound\)B.4}{section.5.6}% 34
+\BOOKMARK [2][-]{subsection.5.6.5}{void setTemperature\(\)B.5}{section.5.6}% 35
+\BOOKMARK [0][-]{chapter.6}{Ultrasonic test results}{}% 36
+\BOOKMARK [1][-]{section.6.1}{Range test \(No motion\)}{chapter.6}% 37
+\BOOKMARK [1][-]{section.6.2}{Ultrasonic range test \(motion\)}{chapter.6}% 38
+\BOOKMARK [1][-]{section.6.3}{Ultrasonic range test \(motion\) Range:<100 cm}{chapter.6}% 39
+\BOOKMARK [1][-]{section.6.4}{Ultrasonic range tests separated \(motion\) Range:<100 cm}{chapter.6}% 40
+\BOOKMARK [0][-]{chapter.7}{The results}{}% 41
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 42
+\BOOKMARK [0][-]{section*.26}{Appendices}{}% 43
+\BOOKMARK [0][-]{appendix.A}{Plots for tests}{}% 44
+\BOOKMARK [0][-]{appendix.B}{Code}{}% 45
+\BOOKMARK [1][-]{section.B.1}{Radar.ino}{appendix.B}% 46
+\BOOKMARK [1][-]{section.B.2}{PowerOnOff}{appendix.B}% 47
+\BOOKMARK [1][-]{section.B.3}{ServoMotor}{appendix.B}% 48
+\BOOKMARK [1][-]{section.B.4}{UltraSonic}{appendix.B}% 49
+\BOOKMARK [1][-]{section.B.5}{Temperature}{appendix.B}% 50
+\BOOKMARK [1][-]{section.B.6}{Display}{appendix.B}% 51
+\BOOKMARK [1][-]{section.B.7}{RGBLed}{appendix.B}% 52
+\BOOKMARK [1][-]{section.B.8}{Leds}{appendix.B}% 53
+\BOOKMARK [1][-]{section.B.9}{SerialPrint}{appendix.B}% 54
+\BOOKMARK [1][-]{section.B.10}{Config}{appendix.B}% 55

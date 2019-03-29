@@ -1,0 +1,61 @@
+\babel@toc {english}{}
+\contentsline {chapter}{Abstract}{v}{chapter*.1}
+\contentsline {chapter}{Contents}{vii}{chapter*.1}
+\contentsline {chapter}{Foreword}{vii}{chapter*.2}
+\contentsline {section}{Acknowledgement}{vii}{section*.3}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Problem description and statement}{3}{chapter.2}
+\contentsline {chapter}{\numberline {3}Radar}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Hardware components}{6}{section.3.1}
+\contentsline {section}{\numberline {3.2} Hardware components purpose and what are they being used for}{6}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}LED}{6}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}RGB LED}{7}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Push button}{7}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}LCD display}{8}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Temperature sensor}{8}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Servo motor}{9}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}Ultrasonic sensor}{9}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.8}Resistors}{10}{subsection.3.2.8}
+\contentsline {section}{\numberline {3.3}Complete circuit}{10}{section.3.3}
+\contentsline {chapter}{\numberline {4}How it's done}{13}{chapter.4}
+\contentsline {chapter}{\numberline {5}Code}{15}{chapter.5}
+\contentsline {section}{\numberline {5.1}Arduino Enviroment}{15}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Arduino Coding Environment}{15}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Arduino code}{16}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Libraries}{17}{section.5.2}
+\contentsline {section}{\numberline {5.3}Radar.ino}{17}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}void setup()}{17}{subsection.5.3.1}
+\contentsline {subsubsection}{Serial.begin(9600)}{17}{section*.16}
+\contentsline {subsubsection}{Serial.println()}{18}{section*.17}
+\contentsline {subsubsection}{Servo}{18}{section*.18}
+\contentsline {subsubsection}{load.blink()}{18}{section*.19}
+\contentsline {subsubsection}{lcd}{18}{section*.20}
+\contentsline {subsection}{\numberline {5.3.2}void loop()}{18}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}Classes}{18}{section.5.4}
+\contentsline {section}{\numberline {5.5}Config.h}{19}{section.5.5}
+\contentsline {section}{\numberline {5.6}Functions}{19}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}void run(Servo s, LiquidCrystal\_I2C lcd)\ref {appendix:PowerOnOff}}{19}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}void servoDirection(Servo s, int state, LiquidCrystal\_I2C lcd)\ref {appendix:PowerOnOff}}{21}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.3}void setSpeedOfSound(int temperature)\ref {appendix:UltraSonic}}{22}{subsection.5.6.3}
+\contentsline {subsection}{\numberline {5.6.4}void setDistance(float speedOfSound)\ref {appendix:UltraSonic}}{22}{subsection.5.6.4}
+\contentsline {subsection}{\numberline {5.6.5}void setTemperature()\ref {appendix:Temperature}}{22}{subsection.5.6.5}
+\contentsline {chapter}{\numberline {6}Ultrasonic test results}{25}{chapter.6}
+\contentsline {section}{\numberline {6.1}Range test (No motion)}{25}{section.6.1}
+\contentsline {section}{\numberline {6.2}Ultrasonic range test (motion)}{26}{section.6.2}
+\contentsline {section}{\numberline {6.3}Ultrasonic range test (motion) Range:<100 cm}{27}{section.6.3}
+\contentsline {section}{\numberline {6.4}Ultrasonic range tests separated (motion) Range:<100 cm}{28}{section.6.4}
+\contentsline {chapter}{\numberline {7}The results}{29}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusion}{31}{chapter.8}
+\contentsline {chapter}{Appendices}{33}{section*.26}
+\contentsline {chapter}{\numberline {A}Plots for tests}{35}{appendix.A}
+\contentsline {chapter}{\numberline {B}Code}{39}{appendix.B}
+\contentsline {section}{\numberline {B.1}Radar.ino}{39}{section.B.1}
+\contentsline {section}{\numberline {B.2}PowerOnOff}{41}{section.B.2}
+\contentsline {section}{\numberline {B.3}ServoMotor}{45}{section.B.3}
+\contentsline {section}{\numberline {B.4}UltraSonic}{46}{section.B.4}
+\contentsline {section}{\numberline {B.5}Temperature}{48}{section.B.5}
+\contentsline {section}{\numberline {B.6}Display}{50}{section.B.6}
+\contentsline {section}{\numberline {B.7}RGBLed}{52}{section.B.7}
+\contentsline {section}{\numberline {B.8}Leds}{54}{section.B.8}
+\contentsline {section}{\numberline {B.9}SerialPrint}{59}{section.B.9}
+\contentsline {section}{\numberline {B.10}Config}{61}{section.B.10}
